@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcvtest.a CMakeFiles/cvtest.dir/cvtest.cpp.o
+/usr/bin/ranlib libcvtest.a
