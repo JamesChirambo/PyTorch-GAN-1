@@ -4095,3 +4095,1004 @@ events:
         7.5 
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_505aa/fast && /usr/bin/make  -f CMakeFiles/cmTC_505aa.dir/build.make CMakeFiles/cmTC_505aa.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_505aa.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_505aa.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_505aa
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_505aa.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_505aa.dir/detect_cuda_version.cc.o -o cmTC_505aa  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5132c/fast && /usr/bin/make  -f CMakeFiles/cmTC_5132c.dir/build.make CMakeFiles/cmTC_5132c.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_5132c.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_5132c.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_5132c.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_5132c.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_5132c
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5132c.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_5132c.dir/objects1.rsp -o cmTC_5132c @CMakeFiles/cmTC_5132c.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fe660/fast && /usr/bin/make  -f CMakeFiles/cmTC_fe660.dir/build.make CMakeFiles/cmTC_fe660.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_fe660.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_fe660.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_fe660
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe660.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_fe660.dir/detect_cuda_version.cc.o -o cmTC_fe660  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b3dcd/fast && /usr/bin/make  -f CMakeFiles/cmTC_b3dcd.dir/build.make CMakeFiles/cmTC_b3dcd.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_b3dcd.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_b3dcd.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_b3dcd.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_b3dcd.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_b3dcd
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3dcd.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_b3dcd.dir/objects1.rsp -o cmTC_b3dcd @CMakeFiles/cmTC_b3dcd.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52cd9/fast && /usr/bin/make  -f CMakeFiles/cmTC_52cd9.dir/build.make CMakeFiles/cmTC_52cd9.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_52cd9.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_52cd9.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_52cd9
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52cd9.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_52cd9.dir/detect_cuda_version.cc.o -o cmTC_52cd9  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b8c41/fast && /usr/bin/make  -f CMakeFiles/cmTC_b8c41.dir/build.make CMakeFiles/cmTC_b8c41.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_b8c41.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_b8c41.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_b8c41.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_b8c41.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_b8c41
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8c41.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_b8c41.dir/objects1.rsp -o cmTC_b8c41 @CMakeFiles/cmTC_b8c41.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d0e42/fast && /usr/bin/make  -f CMakeFiles/cmTC_d0e42.dir/build.make CMakeFiles/cmTC_d0e42.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_d0e42.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_d0e42.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_d0e42
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0e42.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_d0e42.dir/detect_cuda_version.cc.o -o cmTC_d0e42  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ef4d4/fast && /usr/bin/make  -f CMakeFiles/cmTC_ef4d4.dir/build.make CMakeFiles/cmTC_ef4d4.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_ef4d4.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_ef4d4.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_ef4d4.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_ef4d4.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_ef4d4
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef4d4.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_ef4d4.dir/objects1.rsp -o cmTC_ef4d4 @CMakeFiles/cmTC_ef4d4.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f3795/fast && /usr/bin/make  -f CMakeFiles/cmTC_f3795.dir/build.make CMakeFiles/cmTC_f3795.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_f3795.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_f3795.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_f3795
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3795.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_f3795.dir/detect_cuda_version.cc.o -o cmTC_f3795  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3c9d4/fast && /usr/bin/make  -f CMakeFiles/cmTC_3c9d4.dir/build.make CMakeFiles/cmTC_3c9d4.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_3c9d4.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_3c9d4.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_3c9d4.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_3c9d4.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_3c9d4
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c9d4.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_3c9d4.dir/objects1.rsp -o cmTC_3c9d4 @CMakeFiles/cmTC_3c9d4.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fbc73/fast && /usr/bin/make  -f CMakeFiles/cmTC_fbc73.dir/build.make CMakeFiles/cmTC_fbc73.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_fbc73.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_fbc73.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_fbc73
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbc73.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_fbc73.dir/detect_cuda_version.cc.o -o cmTC_fbc73  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f110c/fast && /usr/bin/make  -f CMakeFiles/cmTC_f110c.dir/build.make CMakeFiles/cmTC_f110c.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_f110c.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_f110c.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_f110c.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_f110c.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_f110c
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f110c.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_f110c.dir/objects1.rsp -o cmTC_f110c @CMakeFiles/cmTC_f110c.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_700a1/fast && /usr/bin/make  -f CMakeFiles/cmTC_700a1.dir/build.make CMakeFiles/cmTC_700a1.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_700a1.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_700a1.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_700a1
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_700a1.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_700a1.dir/detect_cuda_version.cc.o -o cmTC_700a1  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f43ea/fast && /usr/bin/make  -f CMakeFiles/cmTC_f43ea.dir/build.make CMakeFiles/cmTC_f43ea.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_f43ea.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_f43ea.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_f43ea.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_f43ea.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_f43ea
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f43ea.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_f43ea.dir/objects1.rsp -o cmTC_f43ea @CMakeFiles/cmTC_f43ea.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_47ef8/fast && /usr/bin/make  -f CMakeFiles/cmTC_47ef8.dir/build.make CMakeFiles/cmTC_47ef8.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_47ef8.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_47ef8.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_47ef8
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47ef8.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_47ef8.dir/detect_cuda_version.cc.o -o cmTC_47ef8  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_96c16/fast && /usr/bin/make  -f CMakeFiles/cmTC_96c16.dir/build.make CMakeFiles/cmTC_96c16.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_96c16.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_96c16.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_96c16.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_96c16.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_96c16
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96c16.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_96c16.dir/objects1.rsp -o cmTC_96c16 @CMakeFiles/cmTC_96c16.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_57932/fast && /usr/bin/make  -f CMakeFiles/cmTC_57932.dir/build.make CMakeFiles/cmTC_57932.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_57932.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_57932.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_57932
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57932.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_57932.dir/detect_cuda_version.cc.o -o cmTC_57932  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8cec7/fast && /usr/bin/make  -f CMakeFiles/cmTC_8cec7.dir/build.make CMakeFiles/cmTC_8cec7.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_8cec7.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_8cec7.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_8cec7.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_8cec7.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_8cec7
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cec7.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_8cec7.dir/objects1.rsp -o cmTC_8cec7 @CMakeFiles/cmTC_8cec7.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9ada0/fast && /usr/bin/make  -f CMakeFiles/cmTC_9ada0.dir/build.make CMakeFiles/cmTC_9ada0.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_9ada0.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_9ada0.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_9ada0
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ada0.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_9ada0.dir/detect_cuda_version.cc.o -o cmTC_9ada0  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bb84b/fast && /usr/bin/make  -f CMakeFiles/cmTC_bb84b.dir/build.make CMakeFiles/cmTC_bb84b.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_bb84b.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_bb84b.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_bb84b.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_bb84b.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_bb84b
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb84b.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_bb84b.dir/objects1.rsp -o cmTC_bb84b @CMakeFiles/cmTC_bb84b.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e411f/fast && /usr/bin/make  -f CMakeFiles/cmTC_e411f.dir/build.make CMakeFiles/cmTC_e411f.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_e411f.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_e411f.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_e411f
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e411f.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_e411f.dir/detect_cuda_version.cc.o -o cmTC_e411f  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cca60/fast && /usr/bin/make  -f CMakeFiles/cmTC_cca60.dir/build.make CMakeFiles/cmTC_cca60.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_cca60.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_cca60.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_cca60.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_cca60.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_cca60
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cca60.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_cca60.dir/objects1.rsp -o cmTC_cca60 @CMakeFiles/cmTC_cca60.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16979/fast && /usr/bin/make  -f CMakeFiles/cmTC_16979.dir/build.make CMakeFiles/cmTC_16979.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_16979.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_16979.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_16979
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16979.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_16979.dir/detect_cuda_version.cc.o -o cmTC_16979  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c5594/fast && /usr/bin/make  -f CMakeFiles/cmTC_c5594.dir/build.make CMakeFiles/cmTC_c5594.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_c5594.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_c5594.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_c5594.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_c5594.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_c5594
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5594.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_c5594.dir/objects1.rsp -o cmTC_c5594 @CMakeFiles/cmTC_c5594.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:81 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e7fa0/fast && /usr/bin/make  -f CMakeFiles/cmTC_e7fa0.dir/build.make CMakeFiles/cmTC_e7fa0.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_e7fa0.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_e7fa0.dir/detect_cuda_version.cc.o -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_e7fa0
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7fa0.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_e7fa0.dir/detect_cuda_version.cc.o -o cmTC_e7fa0  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        11.8
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:106 (try_run)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:166 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/utils.cmake:401 (cuda_select_nvcc_arch_flags)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/public/cuda.cmake:362 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/home/ubuntu/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/home/ubuntu/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
+    directories:
+      source: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+      binary: "/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ubuntu/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7251b/fast && /usr/bin/make  -f CMakeFiles/cmTC_7251b.dir/build.make CMakeFiles/cmTC_7251b.dir/build
+        make[1]: Entering directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_7251b.dir/detect_cuda_compute_capabilities.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -MD -MT CMakeFiles/cmTC_7251b.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_7251b.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_7251b.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_7251b
+        /home/ubuntu/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7251b.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_7251b.dir/objects1.rsp -o cmTC_7251b @CMakeFiles/cmTC_7251b.dir/linkLibs.rsp -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/ubuntu/PyTorch-GAN/implementations/esrgan/cpp/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
